@@ -414,3 +414,7 @@ alunos.push("Maria"); // adiciona no final
 console.log(alunos.length); // 4
 console.log(alunos[0]); // "Ana"
 ```
+
+### Para fixação de conhecimento
+
+**_✅ Array (lista) é uma variável que guarda vários valores organizados em sequência, onde cada valor tem uma posição._**
