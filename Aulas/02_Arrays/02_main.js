@@ -1,3 +1,5 @@
+console.log("Arrays são listas");
+
 // Criando uma lista
 const frutas = ["Maçã", "Banana", "Uva"];
 const numeros = [10, 20, 30];
