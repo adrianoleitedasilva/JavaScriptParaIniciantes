@@ -8,7 +8,9 @@ DOM significa Document Object Model.
 o DOM é o “mapa” da página.
 
 ## O que é manipular o DOM?
+
 Manipular o DOM é usar JavaScript para:
+
 - ler elementos da página
 - mudar textos
 - mudar cores
@@ -20,11 +22,13 @@ Manipular o DOM é usar JavaScript para:
 ### Exemplo simples
 
 **HTML:**
+
 ```html
 <p id="mensagem">Olá</p>
 ```
 
 **JavaScript:**
+
 ```javascript
 const p = document.getElementById("mensagem");
 p.textContent = "Olá, mundo!";
@@ -35,35 +39,43 @@ p.textContent = "Olá, mundo!";
 ## Como selecionar elementos do DOM
 
 **Selecionar por ID**
+
 ```javascript
 document.getElementById("titulo");
 ```
+
 **Selecionar por classe**
+
 ```javascript
 document.querySelector(".botao");
 ```
 
 **Selecionar vários elementos**
+
 ```javascript
 document.querySelectorAll(".item");
 ```
 
 **Modificando elementos**
+
 ```javascript
 elemento.textContent = "Novo texto";
 ```
 
 **Mudar HTML**
+
 ```javascript
 elemento.innerHTML = "<strong>Texto</strong>";
 ```
 
 **Mudar estilo**
+
 ```javascript
 elemento.style.color = "red";
 ```
 
 **Criar elementos na página**
+
 ```javascript
 const li = document.createElement("li");
 li.textContent = "Novo item";
@@ -72,6 +84,7 @@ document.body.appendChild(li);
 ```
 
 **Exemplo do mundo real**
+
 ```javascript
 const botao = document.querySelector("button");
 
@@ -80,6 +93,6 @@ botao.addEventListener("click", () => {
 });
 ```
 
-***👉 Clique → JavaScript reage → página muda.***
+**_👉 Clique → JavaScript reage → página muda._**
 
 **✅ Manipular o DOM é usar JavaScript para acessar e alterar elementos do HTML em tempo real.**

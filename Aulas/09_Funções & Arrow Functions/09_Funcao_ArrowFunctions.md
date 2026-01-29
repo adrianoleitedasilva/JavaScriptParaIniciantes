@@ -20,7 +20,7 @@ console.log(somar(2, 3)); // 5
 - executa uma lógica
 - devolve um resultado (return)
 
-***Por que usar funções?***
+**_Por que usar funções?_**
 
 - evita repetir código
 - deixa o código organizado
@@ -65,7 +65,7 @@ saudacao();
 ### Função com apenas um parâmetro
 
 ```javascript
-const quadrado = n => n * n;
+const quadrado = (n) => n * n;
 ```
 
 ## Diferença principal (bem simples)
@@ -77,6 +77,7 @@ const quadrado = n => n * n;
 | Usa `function`     | Usa `=>`       |
 
 📌 Para iniciantes:
+
 - ✅ Use arrow function na maioria dos casos
 - ✅ Função tradicional aparece mais em códigos antigos
 

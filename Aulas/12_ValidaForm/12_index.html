@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Criando & Validando um Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="12_reset.css" />
+    <link rel="stylesheet" href="12_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Criando & Validando um Formulário</h1>
+
+      <form class="form" id="userForm">
+        <label class="field">
+          <span>Nome</span>
+          <input type="text" id="name" />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" id="email" />
+        </label>
+
+        <button type="submit" class="btn">Enviar</button>
+
+        <p id="feedback"></p>
+      </form>
+    </div>
+
+    <script src="12_main.js"></script>
+  </body>
+</html>

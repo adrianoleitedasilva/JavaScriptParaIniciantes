@@ -11,6 +11,7 @@ Exemplo do mundo real
 Se estiver chovendo, eu levo guarda-chuva.
 Senão, saio sem guarda-chuva.
 ```
+
 É exatamente isso que o código faz.
 
 ## Condicional if
@@ -81,9 +82,7 @@ Uma versão curta do if/else.
 ```javascript
 const idade = 20;
 
-const mensagem = idade >= 18
-  ? "Maior de idade"
-  : "Menor de idade";
+const mensagem = idade >= 18 ? "Maior de idade" : "Menor de idade";
 
 console.log(mensagem);
 ```

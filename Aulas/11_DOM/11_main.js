@@ -13,7 +13,9 @@
   const list = $(".list");
 
   if (!form || !nameInput || !emailInput || !list) {
-    console.warn("Não encontrei os elementos esperados (.form, inputs, .list). Confira o HTML.");
+    console.warn(
+      "Não encontrei os elementos esperados (.form, inputs, .list). Confira o HTML.",
+    );
     return;
   }
 
@@ -33,7 +35,8 @@
 
   // Estado simples
   let editTarget = null; // se estiver editando, guarda o elemento .list-item
-  const emails = () => new Set($$(".list-item", list).map((el) => el.dataset.email));
+  const emails = () =>
+    new Set($$(".list-item", list).map((el) => el.dataset.email));
 
   const normalizeEmail = (v) => (v || "").trim().toLowerCase();
 
@@ -108,7 +111,8 @@
 
     // validação simples de e-mail
     const emailLike = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailLike.test(e)) return { ok: false, message: "E-mail inválido.", type: "err" };
+    if (!emailLike.test(e))
+      return { ok: false, message: "E-mail inválido.", type: "err" };
 
     return { ok: true, name: n, email: e };
   }

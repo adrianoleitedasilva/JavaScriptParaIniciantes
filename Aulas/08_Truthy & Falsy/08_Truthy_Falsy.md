@@ -11,13 +11,12 @@ quando usados em condicionais (if).
 Esses valores sempre viram false em uma condição:
 
 ```javascript
-false
-0
--0
-""        // string vazia
-null
-undefined
-NaN
+false;
+0 - 0;
+(""); // string vazia
+null;
+undefined;
+NaN;
 ```
 
 Exemplo:
@@ -84,5 +83,5 @@ if (lista) {
 
 - Array vazio [] é truthy
 - Objeto vazio {} é truthy
-  
+
 **✅ Truthy e Falsy definem se um valor é tratado como verdadeiro ou falso dentro de uma condição.**
